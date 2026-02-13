@@ -32,6 +32,9 @@ android {
                 // These flags override CMAKE_C_FLAGS_DEBUG / CMAKE_CXX_FLAGS_DEBUG.
                 cFlags("-O3", "-DNDEBUG")
                 cppFlags("-O3", "-DNDEBUG")
+                // 16 KB page size alignment for Android 15+ / Google Play (Nov 2025+).
+                // Ensures native libs (libwhisper.so, libggml*.so) are compatible with 16 KB devices.
+                arguments += listOf("-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON")
             }
         }
     }

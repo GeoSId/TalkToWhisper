@@ -4,6 +4,11 @@ project(whisper.cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# 16 KB page size alignment for Android 15+ / Google Play (Nov 2025+).
+# Ensures LOAD segments are aligned at 16 KB boundaries for compatibility with 16 KB devices.
+# See: https://source.android.com/docs/core/architecture/16kb-page-size/16kb
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-z,max-page-size=16384")
+
 # ── Resolve the whisper.cpp source directory ──────────────────────────────────
 # The source lives at <project_root>/whisper-cpp-src/ (set up by setup_whisper_cpp.sh).
 # From this CMakeLists.txt (app/src/main/jni/whisper/) the project root is 5 levels up.
