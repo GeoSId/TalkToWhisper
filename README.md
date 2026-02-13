@@ -56,7 +56,7 @@ If you skip this step, the Android build will fail with an error that the whispe
 - **`app/src/main/jni/whisper/`** — JNI bindings and CMake build that compiles whisper.cpp into the app.
 - **`app/src/main/java/.../`** — Kotlin app: audio capture, Whisper recognizer, model download, Compose UI.
 
-![Screenshot_20260213_134238.png](../../Desktop/Screenshot_20260213_134238.png)
+![Screenshot_20260213_134238.png](Screenshot_20260213_134238.png)
 
 ## License
 
