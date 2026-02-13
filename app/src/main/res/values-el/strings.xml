@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Talk to Whisper</string>
+    <string name="app_subtitle">Αναγνώριση ομιλίας στη συσκευή</string>
+
+    <!-- Άδεια ήχου -->
+    <string name="audio_permission_required">Απαιτείται άδεια μικροφώνου για τη λήψη ήχου</string>
+    <string name="audio_capture_error">Αδυναμία εκκίνησης λήψης ήχου</string>
+
+    <!-- Μοντέλο Whisper -->
+    <string name="whisper_model_required">Απαιτείται μοντέλο Whisper</string>
+    <string name="whisper_model_description_cpp">Κατεβάστε το πολύγλωσσο μοντέλο Base (~142 MB) για γρήγορη εγγενή αναγνώριση. Υποστηρίζει ~99 γλώσσες.</string>
+    <string name="whisper_engine_label">Μηχανή: %1$s</string>
+    <string name="whisper_engine_cpp">whisper.cpp (εγγενής)</string>
+    <string name="whisper_download_model">Λήψη μοντέλου</string>
+    <string name="whisper_download_starting">Σύνδεση…</string>
+    <string name="whisper_download_progress_mb" formatted="false">%.1f / %.1f MB</string>
+    <string name="whisper_download_progress_bytes">%.1f MB λήφθηκαν</string>
+    <string name="whisper_download_complete">Η λήψη ολοκληρώθηκε!</string>
+    <string name="whisper_download_failed">Η λήψη απέτυχε: %1$s</string>
+    <string name="whisper_model_ready">Το μοντέλο Whisper είναι έτοιμο</string>
+
+    <!-- Μεταγραφή -->
+    <string name="transcription_label">ΜΕΤΑΓΡΑΦΗ</string>
+    <string name="transcription_listening">Ακούω…</string>
+    <string name="transcription_tap_to_speak">Πατήστε το μικρόφωνο για να μιλήσετε</string>
+
+    <!-- Εγγραφή -->
+    <string name="recording_start">Έναρξη εγγραφής</string>
+    <string name="recording_stop">Διακοπή εγγραφής</string>
+
+    <!-- Κατάσταση αναγνώρισης -->
+    <string name="state_idle">Το μοντέλο δεν έχει φορτωθεί</string>
+    <string name="state_loading">Φόρτωση μοντέλου…</string>
+    <string name="state_ready">Έτοιμο</string>
+    <string name="state_processing">Επεξεργασία…</string>
+    <string name="state_error">Σφάλμα</string>
+
+    <!-- Γλώσσα -->
+    <string name="language_label">Γλώσσα</string>
+
+    <!-- Άδεια -->
+    <string name="permission_mic_title">Πρόσβαση μικροφώνου</string>
+    <string name="permission_mic_description">Το Talk to Whisper χρειάζεται πρόσβαση στο μικρόφωνο για αναγνώριση ομιλίας. Ο ήχος επεξεργάζεται στη συσκευή.</string>
+    <string name="permission_mic_grant">Παροχή πρόσβασης</string>
+    <string name="permission_mic_granted">Η άδεια δόθηκε</string>
+</resources>
